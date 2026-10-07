@@ -7,7 +7,7 @@ Mirror of the Project store checklist. Keep both updated.
 - [x] Inspect empty repository
 - [x] Architecture + schema docs in store
 - [x] Repo checklist
-- [ ] Draft PR linking store docs
+- [x] Draft PR linking store docs
 
 ## Phase 1 — Foundation
 
@@ -69,9 +69,9 @@ Mirror of the Project store checklist. Keep both updated.
 
 ## Phase 10 — Release
 
-- [ ] Production build
+- [x] Production build
 - [x] Docker / compose
 - [x] README
-- [ ] Full test suite green
-- [ ] Live URL + demo media
-- [ ] Draft PR
+- [x] Full test suite green
+- [x] Live URL + demo media
+- [x] Draft PR

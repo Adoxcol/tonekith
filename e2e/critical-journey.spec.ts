@@ -11,12 +11,13 @@ test.describe("critical tone journey", () => {
 
     await page.goto("/songs/cigarettes-after-sex/apocalypse");
     await expect(page.getByRole("heading", { name: "Apocalypse" })).toBeVisible();
-    await expect(page.getByText("Blackstar bedroom Apocalypse")).toBeVisible();
+    const blackstar = page.getByRole("link", { name: /Blackstar bedroom Apocalypse/i }).first();
+    await expect(blackstar).toBeVisible();
 
-    await page.getByRole("link", { name: /Blackstar bedroom Apocalypse/i }).click();
+    await blackstar.click();
     await expect(page.getByRole("heading", { name: "Blackstar bedroom Apocalypse" })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Signal chain" })).toBeVisible();
-    await expect(page.getByText("Blackstar HT-20R MkII")).toBeVisible();
+    await expect(page.getByText("Blackstar HT-20R MkII").first()).toBeVisible();
   });
 
   test("sign in and open create tone", async ({ page }) => {
