@@ -49,7 +49,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center gap-2 font-heading text-lg tracking-tight">
             <Guitar className="size-5 text-amber-400" aria-hidden />
-            <span>ToneAtlas</span>
+            <span>tonekith</span>
           </Link>
           <div className="hidden md:block">{nav}</div>
         </div>

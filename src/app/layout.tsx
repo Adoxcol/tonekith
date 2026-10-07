@@ -22,8 +22,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "ToneAtlas — Guitar Tone Community",
-    template: "%s · ToneAtlas",
+    default: "tonekith — guitar tone community",
+    template: "%s · tonekith",
   },
   description:
     "Find and share structured guitar tone recipes — gear, signal chains, parameters, presets, and audio.",

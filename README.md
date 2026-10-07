@@ -1,6 +1,6 @@
-# ToneAtlas — Guitar Tone Community Platform
+# tonekith — guitar tone community platform
 
-Community-driven guitar tone platform. Tones are structured **Tone Recipes**: gear, ordered signal chains, typed parameters, presets, screenshots, audio demos, ratings, tries, feedback, and forks — built so a future AI tone system can train on real data without redesigning the schema.
+Community-driven guitar tone platform. Tones are structured **tone recipes**: gear, ordered signal chains, typed parameters, presets, screenshots, audio demos, ratings, tries, feedback, and forks — built so a future AI tone system can train on real data without redesigning the schema.
 
 ## Stack
 
@@ -34,10 +34,10 @@ App: [http://127.0.0.1:43187](http://127.0.0.1:43187)
 
 | Email | Password | Role |
 | --- | --- | --- |
-| `maya@tone.local` | `password123` | user |
-| `diego@tone.local` | `password123` | user |
-| `priya@tone.local` | `password123` | user |
-| `admin@tone.local` | `password123` | admin |
+| `maya@tonekith.local` | `password123` | user |
+| `diego@tonekith.local` | `password123` | user |
+| `priya@tonekith.local` | `password123` | user |
+| `admin@tonekith.local` | `password123` | admin |
 
 Critical demo path: search **Apocalypse** → Cigarettes After Sex song → **Blackstar bedroom Apocalypse**.
 
@@ -71,7 +71,7 @@ docker compose up --build
 Starts Postgres, MinIO, and the app on port 43187. Run migrations/seed against the compose DB if the app container does not seed automatically:
 
 ```bash
-DATABASE_URL=postgresql://tone:tone@127.0.0.1:5432/tone_community pnpm db:seed
+DATABASE_URL=postgresql://tonekith:tonekith@127.0.0.1:5432/tonekith pnpm db:seed
 ```
 
 ## Architecture

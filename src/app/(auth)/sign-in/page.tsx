@@ -17,7 +17,7 @@ export default function SignInPage() {
     <div className="mx-auto flex min-h-[70vh] max-w-md flex-col justify-center px-4 py-12">
       <h1 className="font-heading text-3xl tracking-tight">Sign in</h1>
       <p className="mt-2 text-sm text-muted-foreground">
-        Welcome back. Demo users: maya@tone.local / password123
+        Welcome back. Demo users: maya@tonekith.local / password123
       </p>
       <form
         className="mt-8 space-y-4"
@@ -61,7 +61,7 @@ export default function SignInPage() {
       <p className="mt-6 text-sm text-muted-foreground">
         No account?{" "}
         <Link href="/sign-up" className="text-amber-300 hover:underline">
-          Join ToneAtlas
+          Join tonekith
         </Link>
       </p>
     </div>

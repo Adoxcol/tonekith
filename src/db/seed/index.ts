@@ -52,7 +52,7 @@ async function main() {
   const admin = await upsertUser({
     id: "user_admin",
     name: "Admin",
-    email: "admin@tone.local",
+    email: "admin@tonekith.local",
     password: "password123",
     role: "admin",
     bio: "Platform admin",
@@ -61,7 +61,7 @@ async function main() {
   const maya = await upsertUser({
     id: "user_maya",
     name: "Maya Chen",
-    email: "maya@tone.local",
+    email: "maya@tonekith.local",
     password: "password123",
     bio: "Bedroom producer chasing CAS & shoegaze tones.",
   });
@@ -69,7 +69,7 @@ async function main() {
   const diego = await upsertUser({
     id: "user_diego",
     name: "Diego Ruiz",
-    email: "diego@tone.local",
+    email: "diego@tonekith.local",
     password: "password123",
     bio: "Amp-in-the-room guy. Blackstar loyalist.",
   });
@@ -77,7 +77,7 @@ async function main() {
   const priya = await upsertUser({
     id: "user_priya",
     name: "Priya Shah",
-    email: "priya@tone.local",
+    email: "priya@tonekith.local",
     password: "password123",
     bio: "Neural DSP / plugin stack explorer.",
   });
@@ -740,7 +740,7 @@ async function main() {
   });
 
   console.log("Seed complete.");
-  console.log("Users: admin@tone.local / maya@tone.local / diego@tone.local / priya@tone.local");
+  console.log("Users: admin@tonekith.local / maya@tonekith.local / diego@tonekith.local / priya@tonekith.local");
   console.log("Password for all: password123");
   console.log("Admin id:", admin.id);
 }

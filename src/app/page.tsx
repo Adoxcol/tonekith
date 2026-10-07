@@ -34,7 +34,7 @@ export default async function HomePage() {
         />
         <div className="relative mx-auto flex min-h-[72vh] max-w-6xl flex-col justify-center px-4 py-16">
           <p className="animate-rise font-heading text-5xl tracking-tight text-amber-300 sm:text-7xl md:text-8xl">
-            ToneAtlas
+            tonekith
           </p>
           <h1 className="animate-rise-delay mt-4 max-w-xl font-heading text-2xl tracking-tight text-foreground/95 sm:text-3xl">
             Structured guitar tones for the songs you love.
