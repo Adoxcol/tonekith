@@ -1,0 +1,55 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: tone
+      POSTGRES_PASSWORD: tone
+      POSTGRES_DB: tone_community
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tone -d tone_community"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  minio:
+    image: minio/minio:latest
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - miniodata:/data
+
+  app:
+    build: .
+    ports:
+      - "43187:43187"
+    environment:
+      DATABASE_URL: postgresql://tone:tone@db:5432/tone_community
+      BETTER_AUTH_SECRET: docker-dev-secret-change-me-32chars
+      BETTER_AUTH_URL: http://127.0.0.1:43187
+      NEXT_PUBLIC_APP_URL: http://127.0.0.1:43187
+      STORAGE_DRIVER: s3
+      S3_ENDPOINT: http://minio:9000
+      S3_REGION: us-east-1
+      S3_BUCKET: tone-community
+      S3_ACCESS_KEY_ID: minioadmin
+      S3_SECRET_ACCESS_KEY: minioadmin
+      S3_PUBLIC_URL: http://127.0.0.1:9000/tone-community
+      PORT: 43187
+    depends_on:
+      db:
+        condition: service_healthy
+      minio:
+        condition: service_started
+
+volumes:
+  pgdata:
+  miniodata:
