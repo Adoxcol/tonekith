@@ -45,7 +45,7 @@ export default async function SongDetailPage({
       href={`?sort=${sort}${sp.platform ? `&platform=${sp.platform}` : ""}`}
       className={cn(
         "text-sm",
-        (sp.sort || "top") === sort ? "text-amber-300" : "text-muted-foreground hover:text-foreground",
+        (sp.sort || "top") === sort ? "text-[var(--brand-orange)]" : "text-muted-foreground hover:text-foreground",
       )}
     >
       {label}
@@ -86,19 +86,19 @@ export default async function SongDetailPage({
         <span className="text-border">|</span>
         <Link
           href="?platform=Physical"
-          className={cn("text-sm", sp.platform === "Physical" ? "text-amber-300" : "text-muted-foreground")}
+          className={cn("text-sm", sp.platform === "Physical" ? "text-[var(--brand-orange)]" : "text-muted-foreground")}
         >
           Physical
         </Link>
         <Link
           href="?platform=Neural%20DSP"
-          className={cn("text-sm", sp.platform === "Neural DSP" ? "text-amber-300" : "text-muted-foreground")}
+          className={cn("text-sm", sp.platform === "Neural DSP" ? "text-[var(--brand-orange)]" : "text-muted-foreground")}
         >
           Neural DSP
         </Link>
         <Link
           href="?platform=AmpliTube"
-          className={cn("text-sm", sp.platform === "AmpliTube" ? "text-amber-300" : "text-muted-foreground")}
+          className={cn("text-sm", sp.platform === "AmpliTube" ? "text-[var(--brand-orange)]" : "text-muted-foreground")}
         >
           AmpliTube
         </Link>

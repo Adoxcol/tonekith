@@ -60,7 +60,7 @@ export default function SignInPage() {
       </form>
       <p className="mt-6 text-sm text-muted-foreground">
         No account?{" "}
-        <Link href="/sign-up" className="text-amber-300 hover:underline">
+        <Link href="/sign-up" className="text-[var(--brand-orange)] hover:underline">
           Join tonekith
         </Link>
       </p>

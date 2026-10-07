@@ -3,7 +3,8 @@ import { expect, test } from "@playwright/test";
 test.describe("critical tone journey", () => {
   test("search Apocalypse → open song → open Blackstar tone", async ({ page }) => {
     await page.goto("/");
-    await expect(page.getByRole("link", { name: "tonekith" }).first()).toBeVisible();
+    await expect(page.getByRole("link", { name: "tonekith home" }).first()).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Find your tone. Make it yours." })).toBeVisible();
 
     await page.goto("/search?q=Apocalypse");
     await expect(page.getByRole("heading", { name: "Search" })).toBeVisible();

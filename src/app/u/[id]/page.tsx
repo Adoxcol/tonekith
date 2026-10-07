@@ -108,7 +108,7 @@ export default async function ProfilePage({
             <li className="text-muted-foreground">
               No gear listed.{" "}
               {isOwner && (
-                <Link href="/gear" className="text-amber-300 hover:underline">
+                <Link href="/gear" className="text-[var(--brand-orange)] hover:underline">
                   Add gear
                 </Link>
               )}

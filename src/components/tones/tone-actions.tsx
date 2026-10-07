@@ -34,7 +34,7 @@ export function ToneActions({
   if (!isAuthed) {
     return (
       <p className="text-sm text-muted-foreground">
-        <a href="/sign-in" className="text-amber-300 hover:underline">
+        <a href="/sign-in" className="text-[var(--brand-orange)] hover:underline">
           Sign in
         </a>{" "}
         to rate, save, try, or fork this tone.

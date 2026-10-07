@@ -134,7 +134,7 @@ export function ToneEditor(props: Props) {
             <button
               type="button"
               onClick={() => setStep(i)}
-              className={`border px-2 py-1 ${i === step ? "border-amber-400 text-amber-300" : "border-border/60 text-muted-foreground"}`}
+              className={`border px-2 py-1 ${i === step ? "border-[var(--brand-orange)] text-[var(--brand-orange)]" : "border-border/60 text-muted-foreground"}`}
             >
               {i + 1}. {s}
             </button>

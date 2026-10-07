@@ -42,9 +42,9 @@ export default async function SearchPage({
 
       {!q.trim() && (
         <p className="mt-10 text-muted-foreground">
-          Try <Link href="/search?q=Apocalypse" className="text-amber-300 hover:underline">Apocalypse</Link>,{" "}
-          <Link href="/search?q=Blackstar" className="text-amber-300 hover:underline">Blackstar</Link>, or{" "}
-          <Link href="/search?q=Deftones" className="text-amber-300 hover:underline">Deftones</Link>.
+          Try <Link href="/search?q=Apocalypse" className="text-[var(--brand-orange)] hover:underline">Apocalypse</Link>,{" "}
+          <Link href="/search?q=Blackstar" className="text-[var(--brand-orange)] hover:underline">Blackstar</Link>, or{" "}
+          <Link href="/search?q=Deftones" className="text-[var(--brand-orange)] hover:underline">Deftones</Link>.
         </p>
       )}
 
@@ -78,7 +78,7 @@ export default async function SearchPage({
                   <li key={song.id}>
                     <Link
                       href={`/songs/${artist.slug}/${song.slug}`}
-                      className="text-sm hover:text-amber-300"
+                      className="text-sm hover:text-[var(--brand-orange)]"
                     >
                       {artist.name} — {song.title}
                     </Link>
@@ -94,7 +94,7 @@ export default async function SearchPage({
               <ul className="mt-3 space-y-2">
                 {results.artists.map((a) => (
                   <li key={a.id}>
-                    <Link href={`/artists/${a.slug}`} className="text-sm hover:text-amber-300">
+                    <Link href={`/artists/${a.slug}`} className="text-sm hover:text-[var(--brand-orange)]">
                       {a.name}
                     </Link>
                   </li>
@@ -111,7 +111,7 @@ export default async function SearchPage({
                   <li key={profile.userId}>
                     <Link
                       href={`/u/${profile.userId}`}
-                      className="text-sm hover:text-amber-300"
+                      className="text-sm hover:text-[var(--brand-orange)]"
                     >
                       {profile.displayName}
                     </Link>

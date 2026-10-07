@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Guitar, Menu, Moon, Search, Sun } from "lucide-react";
+import { Menu, Moon, Search, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import { TonekithMark, TonekithWordmark } from "@/components/brand/wordmark";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -44,12 +45,16 @@ export function SiteHeader() {
   );
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4">
         <div className="flex items-center gap-6">
-          <Link href="/" className="flex items-center gap-2 font-heading text-lg tracking-tight">
-            <Guitar className="size-5 text-amber-400" aria-hidden />
-            <span>tonekith</span>
+          <Link
+            href="/"
+            className="flex items-center gap-2.5 tracking-tight"
+            aria-label="tonekith home"
+          >
+            <TonekithMark className="size-7" />
+            <TonekithWordmark className="hidden text-lg sm:inline-flex" />
           </Link>
           <div className="hidden md:block">{nav}</div>
         </div>

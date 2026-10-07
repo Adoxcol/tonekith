@@ -21,7 +21,7 @@ export default async function ArtistsPage() {
                 <p className="font-medium">{a.name}</p>
                 <p className="mt-1 max-w-xl text-sm text-muted-foreground">{a.description}</p>
               </div>
-              <span className="text-sm text-amber-300/80">View →</span>
+              <span className="text-sm text-[var(--brand-orange)]/80">View →</span>
             </Link>
           </li>
         ))}

@@ -62,7 +62,7 @@ export default async function ToneDetailPage({
           <h1 className="font-heading text-4xl tracking-tight">{detail.tone.title}</h1>
           <p className="mt-2 text-muted-foreground">
             by{" "}
-            <Link href={`/u/${detail.creator.userId}`} className="text-amber-300 hover:underline">
+            <Link href={`/u/${detail.creator.userId}`} className="text-[var(--brand-orange)] hover:underline">
               {detail.creator.displayName}
             </Link>
             {" · "}
@@ -86,7 +86,7 @@ export default async function ToneDetailPage({
       {detail.forkedFrom && (
         <p className="mt-4 text-sm text-muted-foreground">
           Forked from{" "}
-          <Link href={`/tones/${detail.forkedFrom.id}`} className="text-amber-300 hover:underline">
+          <Link href={`/tones/${detail.forkedFrom.id}`} className="text-[var(--brand-orange)] hover:underline">
             {detail.forkedFrom.title}
           </Link>
         </p>
@@ -158,7 +158,7 @@ export default async function ToneDetailPage({
                   <li key={p.id}>
                     <a
                       href={`/api/presets/${p.id}/download`}
-                      className="text-sm text-amber-300 hover:underline"
+                      className="text-sm text-[var(--brand-orange)] hover:underline"
                     >
                       {p.fileName}
                     </a>

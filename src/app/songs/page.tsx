@@ -25,7 +25,7 @@ export default async function SongsPage() {
                 <p className="font-medium">{song.title}</p>
                 <p className="text-sm text-muted-foreground">{artist.name}</p>
               </div>
-              <span className="text-sm text-amber-300/80">View tones →</span>
+              <span className="text-sm text-[var(--brand-orange)]/80">View tones →</span>
             </Link>
           </li>
         ))}

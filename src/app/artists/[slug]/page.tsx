@@ -35,7 +35,7 @@ export default async function ArtistDetailPage({
           <li key={s.id}>
             <Link
               href={`/songs/${artist.slug}/${s.slug}`}
-              className="flex items-center justify-between py-3 hover:text-amber-300"
+              className="flex items-center justify-between py-3 hover:text-[var(--brand-orange)]"
             >
               <span>
                 {s.title}

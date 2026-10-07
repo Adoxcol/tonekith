@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" role="img" aria-label="tonekith">
+  <rect width="128" height="128" rx="28" fill="#0B0B0C"/>
+  <g transform="translate(32 20)">
+    <path d="M20 4h24M32 4v22" stroke="#F5F5F4" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="32" cy="50" r="18" stroke="#F5F5F4" stroke-width="6"/>
+    <line x1="32" y1="50" x2="43" y2="39" stroke="#FF7A00" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="45" y1="30" x2="48.5" y2="26" stroke="#FF7A00" stroke-width="2.8" stroke-linecap="round"/>
+    <line x1="50" y1="34" x2="54" y2="31.5" stroke="#FF7A00" stroke-width="2.8" stroke-linecap="round"/>
+    <line x1="52" y1="40" x2="56.5" y2="38.5" stroke="#FF7A00" stroke-width="2.8" stroke-linecap="round"/>
+  </g>
+</svg>
