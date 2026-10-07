@@ -34,9 +34,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${sora.variable} ${geistMono.variable} dark h-full antialiased`}
+      className={`${sora.variable} ${sora.className} ${geistMono.variable} dark h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col font-sans">
+      <body className={`${sora.className} flex min-h-full flex-col font-sans`}>
         <Providers>
           <SiteHeader />
           <main className="flex-1">{children}</main>

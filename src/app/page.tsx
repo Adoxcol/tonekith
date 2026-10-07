@@ -28,14 +28,14 @@ export default async function HomePage() {
 
   return (
     <div>
-      <section className="relative overflow-hidden border-b border-border/50">
+      <section className="relative overflow-hidden border-b border-border/50 bg-background">
         <div
-          className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgb(255_122_0/0.12),transparent_42%),radial-gradient(circle_at_85%_0%,rgb(35_35_39/0.8),transparent_40%)]"
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgb(35_35_39/0.55),transparent_48%)]"
           aria-hidden
         />
         <div className="relative mx-auto flex min-h-[72vh] max-w-6xl flex-col justify-center px-4 py-16">
           <TonekithWordmark
-            className="animate-rise text-5xl sm:text-7xl md:text-8xl"
+            className="animate-rise font-heading text-5xl sm:text-7xl md:text-8xl"
             knobClassName="h-[0.88em] w-[0.88em] animate-knob"
           />
           <h1 className="animate-rise-delay mt-5 max-w-xl font-heading text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">

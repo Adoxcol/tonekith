@@ -68,7 +68,7 @@ export function TonekithWordmark({
   return (
     <span
       className={cn(
-        "inline-flex items-baseline font-heading font-semibold tracking-tight lowercase",
+        "inline-flex items-baseline font-sans font-semibold tracking-tight lowercase",
         accent ? "text-[var(--brand-orange)]" : "text-foreground",
         className,
       )}
