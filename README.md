@@ -78,8 +78,11 @@ DATABASE_URL=postgresql://tonekith:tonekith@127.0.0.1:5432/tonekith pnpm db:seed
 
 Feature-oriented modular monolith under `src/features/*` with DB in `src/db`, validation in `src/validation`, and Server Actions for mutations.
 
-Project docs (Agent Store):
+**Brand design:** see [`DESIGN.md`](./DESIGN.md) and assets in `public/brand/` (source board: `public/brand/tonekith-brand-board.png`).
 
+Project store docs:
+
+- Brand design / palette
 - Architecture
 - Database schema
 - Implementation checklist

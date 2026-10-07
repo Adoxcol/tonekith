@@ -37,10 +37,9 @@ export default async function HomePage() {
           <TonekithWordmark
             className="animate-rise font-heading text-5xl sm:text-7xl md:text-8xl"
             knobClassName="h-[0.88em] w-[0.88em] animate-knob"
+            showTagline
           />
-          <h1 className="animate-rise-delay mt-5 max-w-xl font-heading text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-            Find your tone. Make it yours.
-          </h1>
+          <h1 className="sr-only">Find your tone. Make it yours.</h1>
           <p className="animate-rise-delay mt-3 max-w-lg text-muted-foreground">
             Search a song, open a recipe, and recreate the chain — amp, pedals, params, presets, and
             audio demos from the community.

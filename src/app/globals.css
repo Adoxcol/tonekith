@@ -40,6 +40,8 @@
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
   --color-brand-orange: var(--brand-orange);
+  --color-brand-orange-hover: var(--brand-orange-hover);
+  --color-brand-orange-dark: var(--brand-orange-dark);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -50,12 +52,15 @@
 }
 
 :root {
-  /* tonekith brand tokens — neutral greys + orange accent only */
+  /* tonekith brand tokens — from brand-design.md / brand board */
   --brand-black: #0b0b0c;
   --brand-grey-dark: #161618;
   --brand-grey-mid: #232327;
   --brand-orange: #ff7a00;
+  --brand-orange-hover: #ff5a00;
+  --brand-orange-dark: #cc5200;
   --brand-offwhite: #f5f5f4;
+  --brand-text-secondary: #a1a1a6;
 
   --background: #f5f5f4;
   --foreground: #0b0b0c;
@@ -68,7 +73,7 @@
   --secondary: #ececee;
   --secondary-foreground: #0b0b0c;
   --muted: #ececee;
-  --muted-foreground: #5c5c63;
+  --muted-foreground: #a1a1a6;
   --accent: #ececee;
   --accent-foreground: #0b0b0c;
   --destructive: #c23b22;
@@ -103,7 +108,7 @@
   --secondary: #232327;
   --secondary-foreground: #f5f5f4;
   --muted: #232327;
-  --muted-foreground: #a0a0a8;
+  --muted-foreground: #a1a1a6;
   --accent: #232327;
   --accent-foreground: #f5f5f4;
   --destructive: #e05a45;
@@ -111,7 +116,7 @@
   --input: rgb(245 245 244 / 14%);
   --ring: #ff7a00;
   --chart-1: #ff7a00;
-  --chart-2: #a0a0a8;
+  --chart-2: #a1a1a6;
   --chart-3: #5c5c63;
   --chart-4: #232327;
   --chart-5: #161618;

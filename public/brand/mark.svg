@@ -1,16 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="tonekith">
-  <!-- Alternate t + knob mark -->
+  <!-- compact knob mark for header / favicon -->
   <path
-    d="M18 10h28M32 10v18"
+    d="M20 18.5 A16 16 0 1 0 44 18.5"
     stroke="#F5F5F4"
-    stroke-width="5.5"
+    stroke-width="5"
     stroke-linecap="round"
   />
-  <circle cx="32" cy="42" r="14" stroke="#F5F5F4" stroke-width="4.5" />
-  <!-- pointer ~2 o'clock -->
-  <line x1="32" y1="42" x2="40.5" y2="33.5" stroke="#FF7A00" stroke-width="3.5" stroke-linecap="round" />
-  <!-- radial ticks -->
-  <line x1="42" y1="26" x2="44.5" y2="23" stroke="#FF7A00" stroke-width="2.2" stroke-linecap="round" />
-  <line x1="46" y1="29" x2="49" y2="27" stroke="#FF7A00" stroke-width="2.2" stroke-linecap="round" />
-  <line x1="47.5" y1="34" x2="51" y2="33" stroke="#FF7A00" stroke-width="2.2" stroke-linecap="round" />
+  <line x1="32" y1="34" x2="41" y2="21" stroke="#FF7A00" stroke-width="4" stroke-linecap="round"/>
+  <line x1="30" y1="11" x2="28.8" y2="6.5" stroke="#F5F5F4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="32.5" y1="10" x2="32.5" y2="5.2" stroke="#F5F5F4" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="35" y1="11" x2="36.2" y2="6.5" stroke="#F5F5F4" stroke-width="2.4" stroke-linecap="round"/>
 </svg>
