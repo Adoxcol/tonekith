@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+  <!-- open ring (gap at top) matching brand board -->
+  <path
+    d="M16 12.5 A14 14 0 1 0 32 12.5"
+    stroke="currentColor"
+    stroke-width="4.5"
+    stroke-linecap="round"
+  />
+  <!-- pointer ~1–2 o'clock -->
+  <line x1="24" y1="26" x2="31.5" y2="15.5" stroke="#FF7A00" stroke-width="3.6" stroke-linecap="round"/>
+  <!-- three radial ticks above gap -->
+  <line x1="22.5" y1="7" x2="21.5" y2="3.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="24.5" y1="6.2" x2="24.5" y2="2.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="26.5" y1="7" x2="27.5" y2="3.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+</svg>
